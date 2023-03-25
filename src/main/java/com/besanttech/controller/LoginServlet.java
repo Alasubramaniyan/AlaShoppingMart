@@ -25,8 +25,8 @@ public class LoginServlet extends HttpServlet {
 		 res.setContentType("text/html");  
 		 PrintWriter out=res.getWriter();
 		 User user=new User();
-		 user.setUsername(req.getParameter("username"));
-		 user.setPassword(req.getParameter("userpass"));
+		 user.setUsername((String)req.getParameter("username"));
+		 user.setPassword((String)req.getParameter("userpass"));
 		 UserDao userDao=new UserDao();
 		 if(userDao.getUserDetails(user)!=null) {
 			 

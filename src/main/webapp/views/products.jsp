@@ -11,9 +11,9 @@
 
 	<table cellpadding="2" cellspacing="2" border="1">
 		<tr>
-			<th>id</th>
-			<th>name</th>
-			<th>price</th>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Price</th>
 			<th>inStock</th>
 			<th></th>
 		</tr>
@@ -23,7 +23,7 @@
 				<td>${product.name }</td>
 				<td>${product.price }</td>
 				<td>${product.quantity}</td>
-				<td><a href="${pageContext.request.contextPath}/cart?&action=add&id=${product.id }">AddToCart</a></td>
+				<td><a href="${pageContext.request.contextPath}/cart?&action=add&product_id=${product.id }">AddToCart</a></td>
 			</tr>
 		</c:forEach>
 	</table>
@@ -33,7 +33,7 @@
 <br/>	
 
 <br/>
- <a href="${pageContext.request.contextPath }/">Home</a>
+ <a href="${pageContext.request.contextPath }/views/home.jsp">Home</a>
 <br/>	
 
 

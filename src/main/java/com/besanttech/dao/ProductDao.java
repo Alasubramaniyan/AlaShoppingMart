@@ -34,11 +34,11 @@ public class ProductDao {
 			ResultSet rs = stmt.executeQuery();
 			while (rs.next()) {
 				Product product = new Product();
-				product.setProductid(rs.getInt(1));
-				product.setProductname(rs.getString(2));
-				product.setProductcolor(rs.getString(3));
-				product.setProductprice(rs.getFloat(4));
-				product.setProductquantity(rs.getInt(5));
+				product.setId(rs.getInt(1));
+				product.setName(rs.getString(2));
+				product.setColor(rs.getString(3));
+				product.setPrice(rs.getFloat(4));
+				product.setQuantity(rs.getInt(5));
 				products.add(product);
 			}
 
@@ -58,11 +58,11 @@ public class ProductDao {
 			while (rs.next()) {
 
 				Product product = new Product();
-				product.setProductid(rs.getInt(1));
-				product.setProductname(rs.getString(2));
-				product.setProductcolor(rs.getString(3));
-				product.setProductprice(rs.getFloat(4));
-				product.setProductquantity(rs.getInt(5));
+				product.setId(rs.getInt(1));
+				product.setName(rs.getString(2));
+				product.setColor(rs.getString(3));
+				product.setPrice(rs.getFloat(4));
+				product.setQuantity(rs.getInt(5));
 				return product;
 
 			}

@@ -13,6 +13,9 @@ import com.besanttech.dao.ProductDao;
 
 @WebServlet("/products")
 public class ProductServlet extends HttpServlet {
+	public ProductServlet() {
+		
+	}
 
 	 
 		public void doGet(HttpServletRequest req,HttpServletResponse res)  

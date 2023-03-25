@@ -76,11 +76,11 @@ public class OrderDao {
 					List<Product> products = new ArrayList<>();
 					while (rs3.next()) {
 						Product product = new Product();
-						product.setProductid(rs3.getInt(1));
-						product.setProductname(rs3.getString(2));
-						product.setProductcolor(rs3.getString(3));
-						product.setProductprice(rs3.getFloat(4));
-						product.setProductquantity(rs3.getInt(5));
+						product.setId(rs3.getInt(1));
+						product.setName(rs3.getString(2));
+						product.setColor(rs3.getString(3));
+						product.setPrice(rs3.getFloat(4));
+						product.setQuantity(rs3.getInt(5));
 						productsList.add(product);
 					}
 				}
